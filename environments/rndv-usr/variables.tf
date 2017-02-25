@@ -1,6 +1,5 @@
 # Common
 variable env {}
-variable vmfolder_path {}
 
 # Number of workstations to deploy
 #variable ws_amount {default = 0}
@@ -14,7 +13,7 @@ variable vsphere_templates_folder {}
 
 # VSphere env related
 variable vsphere_cluster {}
-variable vsphere_root_folder {}
+variable vsphere_folder {}
 variable vsphere_rnd_users_network {}
 variable vsphere_centos_template {}
 variable vsphere_datastore {}
