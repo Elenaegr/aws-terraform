@@ -1,7 +1,7 @@
-module "ws_centos_901_905" {
+module "ws_centos_901_902" {
   source = "../../terraform/modules/workstations/rnd"
 
-  workstations    = 5
+  workstations    = 2
   ws_first_number = 901
 
   env        = "${var.env}"

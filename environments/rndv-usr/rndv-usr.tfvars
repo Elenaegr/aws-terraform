@@ -6,9 +6,9 @@ env = "RNDV-USR"
 # ws_amount = 
 
 # VSphere common
-vsphere_user = "${var.username}"
+#vsphere_user = "username"
 
-vsphere_password = "${var.password}"
+#vsphere_password = "password"
 
 vsphere_server = "jjvcntr1.jajah.dublin"
 
@@ -28,9 +28,3 @@ vsphere_rnd_users_network = "USR-DEV_172.16.22"
 vsphere_centos_template = "CentOS7.2_WS_Template"
 
 vsphere_datastore = "3P82-PROD/3P82-01"
-
-#Temporary
-username = "jajah\\sergey"
-
-#password = ""
-
