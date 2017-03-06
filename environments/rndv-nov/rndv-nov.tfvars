@@ -1,7 +1,11 @@
 # Common
-env = "NOVUM-TEMP"
+env = "RNDV-NOV"
 
 # Component machine amounts
+
+frs_count = 2
+
+imc_count = 2
 
 # VSphere common
 vsphere_user = "jajah\\sergey"

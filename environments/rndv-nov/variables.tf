@@ -1,6 +1,10 @@
 # Common
 variable env {}
 
+# Components
+variable frs_count {}
+variable imc_count {}
+
 # VSphere common
 variable vsphere_datacenter {}
 variable vsphere_user {}

@@ -45,5 +45,8 @@ variable "network" {}
 variable "template" {}
 variable "datastore" {}
 
+#variable "disk_size" {}
+
+
 ### Virtual Machine
 
