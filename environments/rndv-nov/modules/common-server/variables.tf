@@ -39,14 +39,25 @@ variable "skip_config" {
 }
 
 variable "datacenter" {}
+
 variable "parent_folder" {}
+
 variable "cluster" {}
+
 variable "network" {}
+
 variable "template" {}
+
 variable "datastore" {}
 
 #variable "disk_size" {}
 
-
 ### Virtual Machine
+
+### PowerDNS
+variable "dns_domain" {
+  description = "The dns domain the machine should be registered to"
+}
+
+### PowerDNS
 

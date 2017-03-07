@@ -10,6 +10,8 @@ module "imc" {
   datacenter = "${var.vsphere_datacenter}"
   cluster    = "${var.vsphere_cluster}"
 
+  dns_domain = "${var.env_domain}"
+
   #srv_number    = "01"
   parent_folder = "${var.vsphere_root_folder}"
   srv_vcpu      = 4
