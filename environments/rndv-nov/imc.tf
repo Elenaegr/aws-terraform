@@ -1,5 +1,5 @@
 module "imc" {
-  source = "./modules/common-server"
+  source = "./modules/common-server-1-disk"
 
   srv_role = "imc"
 

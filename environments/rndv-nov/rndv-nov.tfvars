@@ -5,7 +5,7 @@ env = "RNDV-NOV"
 
 frs_count = 2
 
-imc_count = 2
+imc_count = 0
 
 # VSphere common
 vsphere_user = "jajah\\sergey"
@@ -31,7 +31,7 @@ vsphere_app_network = "VLAN_831_RNDV-APP_(10.230.132.0_23)"
 
 vsphere_db_network = "VLAN_841_RNDV-DB_(10.230.134.0_24)"
 
-vsphere_linux_template = "CentOS7.2_Template"
+vsphere_linux_template = "Debian8_Nov_Template"
 
 vsphere_datastore = "3P82-PROD/3P82-01"
 

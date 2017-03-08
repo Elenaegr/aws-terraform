@@ -1,5 +1,5 @@
 module "frs" {
-  source = "./modules/common-server"
+  source = "./modules/common-server-2-disks"
 
   srv_role         = "frs"
   servers          = "${var.frs_count}"
@@ -15,7 +15,8 @@ module "frs" {
   srv_vcpu   = 4
   srv_memory = 8192
 
-  #disk_size     = 50
+  second_disk_size = 40
+
   network     = "${var.vsphere_app_network}"
   datastore   = "${var.vsphere_datastore}"
   template    = "${format("%s/%s", var.vsphere_templates_folder, var.vsphere_linux_template)}"
