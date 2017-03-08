@@ -3,9 +3,9 @@ env = "RNDV-NOV"
 
 # Component machine amounts
 
-frs_count = 2
+frs_count = 1
 
-imc_count = 0
+imc_count = 1
 
 # VSphere common
 vsphere_user = "jajah\\sergey"
