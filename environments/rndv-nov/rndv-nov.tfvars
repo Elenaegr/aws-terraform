@@ -25,11 +25,11 @@ vsphere_cluster = "R&D"
 
 vsphere_network_folder = "RAN"
 
-vsphere_dmz_network = "******"
+vsphere_dmz_network = "VLAN_821_RNDV-DMZ_(10.230.130.0_23)"
 
-vsphere_app_network = "USR-DEV_172.16.22"
+vsphere_app_network = "VLAN_831_RNDV-APP_(10.230.132.0_23)"
 
-vsphere_db_network = "*************"
+vsphere_db_network = "VLAN_841_RNDV-DB_(10.230.134.0_24)"
 
 vsphere_linux_template = "CentOS7.2_Template"
 
@@ -39,6 +39,6 @@ vsphere_datastore = "3P82-PROD/3P82-01"
 
 pdns_api_key = "api1234"
 
-pdns_host = "ran-pdns01.jajah.dublin"
+pdns_host = "http://ran-pdns01.jajah.dublin:8081"
 
 env_domain = "dev.novumproject.com."

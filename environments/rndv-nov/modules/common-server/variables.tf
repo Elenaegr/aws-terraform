@@ -40,7 +40,9 @@ variable "skip_config" {
 
 variable "datacenter" {}
 
-variable "parent_folder" {}
+#variable "parent_folder" {}
+
+variable "env_folder" {}
 
 variable "cluster" {}
 

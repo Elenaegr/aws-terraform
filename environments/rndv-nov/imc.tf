@@ -13,9 +13,9 @@ module "imc" {
   dns_domain = "${var.env_domain}"
 
   #srv_number    = "01"
-  parent_folder = "${var.vsphere_root_folder}"
-  srv_vcpu      = 4
-  srv_memory    = 8192
+  env_folder = "${vsphere_folder.env_folder.path}"
+  srv_vcpu   = 4
+  srv_memory = 8192
 
   #disk_size     = 50
   network     = "${var.vsphere_app_network}"
