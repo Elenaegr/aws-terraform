@@ -3,7 +3,7 @@ resource "powerdns_record" "a" {
 
   count   = "${var.srv_number != "none" ? 1 : var.servers}"
   zone    = "${var.dns_domain}"
-  name    = "${lower(format("%s.%s", element(vsphere_virtual_machine.srv.*.name, count.index), var.dns_domain))}"
+  name    = "${lower(element(vsphere_virtual_machine.srv.*.custom_configuration_parameters.guestinfo.hostname, count.index))}"
   type    = "A"
   ttl     = 600
   records = ["${element(vsphere_virtual_machine.srv.*.network_interface.0.ipv4_address, count.index)}"]
@@ -26,5 +26,5 @@ resource "powerdns_record" "ptr" {
 
   type    = "PTR"
   ttl     = 600
-  records = ["${lower(format("%s.%s", element(vsphere_virtual_machine.srv.*.name, count.index), var.dns_domain))}"]
+  records = ["${lower(element(vsphere_virtual_machine.srv.*.custom_configuration_parameters.guestinfo.hostname, count.index))}"]
 }
