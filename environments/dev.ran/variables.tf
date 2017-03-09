@@ -18,6 +18,8 @@ variable tel_count {}
 
 variable lbd_count {}
 
+variable rds_count {}
+
 # VSphere common
 variable vsphere_datacenter {}
 

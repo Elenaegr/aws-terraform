@@ -19,6 +19,8 @@ tel_count = 4
 
 lbd_count = 2
 
+rds_count = 3
+
 # VSphere common
 vsphere_user = "jajah\\sergey"
 
