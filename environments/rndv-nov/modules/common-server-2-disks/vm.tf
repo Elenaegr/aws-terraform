@@ -31,5 +31,9 @@ resource "vsphere_virtual_machine" "srv" {
     bootable        = "false"
   }
 
+  custom_configuration_parameters {
+    "guestinfo.hostname" = "${upper(format("%s-%s%s", var.env, var.srv_role, "${var.srv_number == "none" ? format("%02d", count.index + var.srv_first_number) : var.srv_number}"))}"
+  }
+
   skip_customization = "${var.skip_config}"
 }
