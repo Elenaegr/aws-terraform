@@ -21,7 +21,6 @@ resource "vsphere_virtual_machine" "srv" {
   disk {
     datastore = "${var.datastore}"
     bootable  = "true"
-    type      = "${var.first_disk_type}"
 
     #template = "${format("%s/%s", var.vsphere_templates_folder, var.vsphere_linux_template)}"
     template = "${var.template}"

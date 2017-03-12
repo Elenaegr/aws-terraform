@@ -23,11 +23,14 @@ rds_count = 3
 
 rbt_count = 2
 
-# VSphere common
-#vsphere_user = "${format("%s", var.username)}"
-vsphere_user = "jajah\\sergey"
+prm_count = 2
 
-vsphere_password = "${var.password}"
+alm_count = 2
+
+# VSphere common
+#vsphere_user = "${var.username}" It doesnt work :(
+
+#vsphere_password = "${var.password}" It doesnt work :(
 
 vsphere_server = "jjvcntr1.jajah.dublin"
 
@@ -41,6 +44,8 @@ vsphere_datacenter = "RAN"
 vsphere_cluster = "R&D"
 
 vsphere_network_folder = "RAN"
+
+vsphere_mgmt_network = "VLAN_810_RNDV-MGMT_(10.230.128.0_24)"
 
 vsphere_dmz_network = "VLAN_821_RNDV-DMZ_(10.230.130.0_23)"
 
@@ -65,3 +70,6 @@ pdns_api_key = "api1234"
 pdns_host = "http://ran-pdns01.jajah.dublin:8081"
 
 env_domain = "dev.ran.novumproject.com."
+
+# Temporary
+username = "iaac-dev-deploy"

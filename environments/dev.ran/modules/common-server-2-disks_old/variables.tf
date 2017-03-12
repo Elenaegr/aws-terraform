@@ -43,11 +43,6 @@ variable "skip_config" {
   default     = "false"
 }
 
-variable "first_disk_type" {
-  description = "The type of the first virtual disk"
-  default     = "thin"
-}
-
 variable "second_disk_size" {
   description = "Size in GB of the second disk"
 }

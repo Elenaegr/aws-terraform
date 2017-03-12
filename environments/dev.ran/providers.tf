@@ -1,5 +1,5 @@
 provider "vsphere" {
-  user     = "${var.vsphere_user}"
+  user     = "${format("jajah\\%s", var.username)}"
   password = "${var.password}"
 
   #password       = "${var.vsphere_password}"

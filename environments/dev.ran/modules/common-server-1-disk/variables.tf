@@ -43,6 +43,11 @@ variable "skip_config" {
   default     = "false"
 }
 
+variable "disk_type" {
+  description = "The type of the virtual disk"
+  default     = "thin"
+}
+
 variable "datacenter" {}
 
 #variable "parent_folder" {}

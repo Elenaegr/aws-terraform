@@ -1,3 +1,6 @@
 .terraform/
 !.terraform/modules/
+
+# test configuration
+environments/dev.ran.test/
 aws_creds.sh
