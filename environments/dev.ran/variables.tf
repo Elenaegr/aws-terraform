@@ -20,6 +20,8 @@ variable lbd_count {}
 
 variable rds_count {}
 
+variable rbt_count {}
+
 # VSphere common
 variable vsphere_datacenter {}
 
@@ -68,4 +70,6 @@ variable pdns_host {}
 variable env_domain {}
 
 # Temporary
+#variable username {}
+
 variable password {}

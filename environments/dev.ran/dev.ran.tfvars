@@ -21,7 +21,10 @@ lbd_count = 2
 
 rds_count = 3
 
+rbt_count = 2
+
 # VSphere common
+#vsphere_user = "${format("%s", var.username)}"
 vsphere_user = "jajah\\sergey"
 
 vsphere_password = "${var.password}"
