@@ -6,6 +6,8 @@ variable frs_count {}
 
 variable imc_count {}
 
+variable chat_count {}
+
 variable db_count {}
 
 variable kaf_count {}
@@ -25,6 +27,18 @@ variable rbt_count {}
 variable prm_count {}
 
 variable alm_count {}
+
+variable metricst_count {}
+
+variable metricad_count {}
+
+variable fluentd_count {}
+
+variable elasticin_count {}
+
+variable elasticcli_count {}
+
+variable elasticdata_count {}
 
 # VSphere common
 variable vsphere_datacenter {}
@@ -62,8 +76,8 @@ variable vsphere_kub_template {
   description = "Kubernetes template"
 }
 
-variable vsphere_gbe_template {
-  description = "GBE template"
+variable vsphere_chat_template {
+  description = "Chat server template"
 }
 
 variable vsphere_datastore {}

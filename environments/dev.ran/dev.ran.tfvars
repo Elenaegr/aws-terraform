@@ -7,6 +7,8 @@ frs_count = 1
 
 imc_count = 1
 
+chat_count = 2
+
 db_count = 3
 
 kaf_count = 3
@@ -26,6 +28,18 @@ rbt_count = 2
 prm_count = 2
 
 alm_count = 2
+
+metricst_count = 4
+
+metricad_count = 4
+
+fluentd_count = 2
+
+elasticin_count = 2
+
+elasticcli_count = 2
+
+elasticdata_count = 2
 
 # VSphere common
 #vsphere_user = "${var.username}" It doesnt work :(
@@ -59,7 +73,7 @@ vsphere_cp_template = "Debian8_NovFrs_Template"
 
 vsphere_kub_template = ""
 
-vsphere_gbe_template = ""
+vsphere_chat_template = "Debian7_NovChat_Template"
 
 vsphere_datastore = "3P82-PROD/3P82-01"
 

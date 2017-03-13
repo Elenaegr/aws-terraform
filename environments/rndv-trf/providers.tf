@@ -3,7 +3,7 @@ provider "bigip" {
 
   #username = "${var.bigip_user}"
   username   = "sergey"
-  password   = "${var.bigip_pass}"
+  password   = "${var.password}"
   token_auth = "true"
   login_ref  = "tmos"
 }

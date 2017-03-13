@@ -41,8 +41,8 @@ variable vsphere_datastore {}
 # Bigip common
 variable bigip_url {}
 
-variable bigip_user {}
-variable bigip_pass {}
+#variable bigip_user {}
+#variable bigip_pass {}
 variable bigip_branch {}
 variable bigip_partition {}
 

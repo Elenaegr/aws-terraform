@@ -45,9 +45,9 @@ vsphere_datastore = "3P82-PROD/3P82-01"
 # Bigip common
 bigip_url = "https://str-bigip01.jajah.dublin"
 
-bigip_user = "sergey"
+#bigip_user = "sergey"
 
-bigip_pass = "${var.password}"
+#bigip_pass = "${var.password}"
 
 bigip_branch = "${var.env}"
 
