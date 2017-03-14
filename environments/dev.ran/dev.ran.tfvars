@@ -41,6 +41,10 @@ elasticcli_count = 2
 
 elasticdata_count = 2
 
+dev_count = 2
+
+bastion_count = 2
+
 # VSphere common
 #vsphere_user = "${var.username}" It doesnt work :(
 
