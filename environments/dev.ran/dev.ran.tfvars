@@ -17,7 +17,7 @@ zk_count = 3
 
 fs_count = 2
 
-tel_count = 4
+tel_count = 0
 
 lbd_count = 2
 

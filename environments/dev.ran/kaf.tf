@@ -5,7 +5,7 @@ resource "vsphere_folder" "kaf_folder" {
 }
 
 module "kaf" {
-  source = "./modules/common-server-2-disks"
+  source = "./modules/common-vs-2-disks"
 
   srv_role         = "kaf"
   servers          = "${var.kaf_count}"

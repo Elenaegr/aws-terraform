@@ -5,7 +5,7 @@ resource "vsphere_folder" "chat_folder" {
 }
 
 module "chat" {
-  source = "./modules/common-server-1-disk"
+  source = "./modules/common-vs-1-disk"
 
   srv_role         = "chat"
   servers          = "${var.chat_count}"

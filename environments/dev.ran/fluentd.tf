@@ -5,7 +5,7 @@ resource "vsphere_folder" "fluentd_folder" {
 }
 
 module "fluentd" {
-  source = "./modules/common-server-1-disk"
+  source = "./modules/common-vs-1-disk"
 
   srv_role         = "fluentd"
   servers          = "${var.fluentd_count}"

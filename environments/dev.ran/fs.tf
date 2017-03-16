@@ -5,7 +5,7 @@ resource "vsphere_folder" "fs_folder" {
 }
 
 module "fs" {
-  source = "./modules/common-server-2-disks"
+  source = "./modules/common-vs-2-disks"
 
   srv_role         = "fs"
   servers          = "${var.fs_count}"

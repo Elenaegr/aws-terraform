@@ -5,7 +5,7 @@ resource "vsphere_folder" "elasticin_folder" {
 }
 
 module "elasticin" {
-  source = "./modules/common-server-1-disk"
+  source = "./modules/common-vs-1-disk"
 
   srv_role         = "elasticin"
   servers          = "${var.elasticin_count}"

@@ -5,7 +5,7 @@ resource "vsphere_folder" "elasticcli_folder" {
 }
 
 module "elasticcli" {
-  source = "./modules/common-server-1-disk"
+  source = "./modules/common-vs-1-disk"
 
   srv_role         = "elasticcli"
   servers          = "${var.elasticcli_count}"

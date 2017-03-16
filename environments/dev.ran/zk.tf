@@ -5,7 +5,7 @@ resource "vsphere_folder" "zk_folder" {
 }
 
 module "zk" {
-  source = "./modules/common-server-1-disk"
+  source = "./modules/common-vs-1-disk"
 
   srv_role         = "zk"
   servers          = "${var.zk_count}"

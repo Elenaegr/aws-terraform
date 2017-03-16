@@ -5,7 +5,7 @@ resource "vsphere_folder" "prm_folder" {
 }
 
 module "prm" {
-  source = "./modules/common-server-2-disks"
+  source = "./modules/common-vs-2-disks"
 
   srv_role         = "prm"
   servers          = "${var.prm_count}"

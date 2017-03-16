@@ -5,7 +5,7 @@ resource "vsphere_folder" "metricad_folder" {
 }
 
 module "metricad" {
-  source = "./modules/common-server-1-disk"
+  source = "./modules/common-vs-1-disk"
 
   srv_role         = "metricad"
   servers          = "${var.metricad_count}"
