@@ -53,6 +53,8 @@ batch_count = 2
 
 cron_count = 2
 
+artif_count = 1
+
 # VSphere common
 #vsphere_user = "${var.username}" It doesnt work :(
 
