@@ -5,7 +5,7 @@ resource "vsphere_folder" "elasticdata_folder" {
 }
 
 module "elasticdata" {
-  source = "./modules/common-vs-2-disks"
+  source = "../../terraform/modules/servers/common-vs-2-disks"
 
   srv_role         = "elasticdata"
   servers          = "${var.elasticdata_count}"

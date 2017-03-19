@@ -5,7 +5,7 @@ resource "vsphere_folder" "rbt_folder" {
 }
 
 module "rbt" {
-  source = "./modules/common-vs-1-disk"
+  source = "../../terraform/modules/servers/common-vs-1-disk"
 
   srv_role         = "rbt"
   servers          = "${var.rbt_count}"

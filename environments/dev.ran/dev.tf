@@ -5,7 +5,7 @@ resource "vsphere_folder" "dev_folder" {
 }
 
 module "dev" {
-  source = "./modules/common-vs-2-disks"
+  source = "../../terraform/modules/servers/common-vs-2-disks"
 
   srv_role         = "dev"
   servers          = "${var.dev_count}"

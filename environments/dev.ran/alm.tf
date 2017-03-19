@@ -5,7 +5,7 @@ resource "vsphere_folder" "alm_folder" {
 }
 
 module "alm" {
-  source = "./modules/common-vs-1-disk"
+  source = "../../terraform/modules/servers/common-vs-1-disk"
 
   srv_role         = "alm"
   servers          = "${var.alm_count}"

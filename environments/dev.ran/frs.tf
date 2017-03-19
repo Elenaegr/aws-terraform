@@ -5,7 +5,7 @@ resource "vsphere_folder" "frs_folder" {
 }
 
 module "frs" {
-  source = "./modules/common-vs-1-disk"
+  source = "../../terraform/modules/servers/common-vs-1-disk"
 
   srv_role         = "frs"
   servers          = "${var.frs_count}"

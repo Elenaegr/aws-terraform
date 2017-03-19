@@ -5,7 +5,7 @@ resource "vsphere_folder" "imc_folder" {
 }
 
 module "imc" {
-  source = "./modules/common-vs-1-disk"
+  source = "../../terraform/modules/servers/common-vs-1-disk"
 
   srv_role = "imc"
 

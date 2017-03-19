@@ -5,7 +5,7 @@ resource "vsphere_folder" "metricad_folder" {
 }
 
 module "metricad" {
-  source = "./modules/common-vs-1-disk"
+  source = "../../terraform/modules/servers/common-vs-1-disk"
 
   srv_role         = "metricad"
   servers          = "${var.metricad_count}"

@@ -5,7 +5,7 @@ resource "vsphere_folder" "elasticcli_folder" {
 }
 
 module "elasticcli" {
-  source = "./modules/common-vs-1-disk"
+  source = "../../terraform/modules/servers/common-vs-1-disk"
 
   srv_role         = "elasticcli"
   servers          = "${var.elasticcli_count}"

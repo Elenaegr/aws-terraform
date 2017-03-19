@@ -5,7 +5,7 @@ resource "vsphere_folder" "bastion_folder" {
 }
 
 module "bastion" {
-  source = "./modules/common-vs-1-disk"
+  source = "../../terraform/modules/servers/common-vs-1-disk"
 
   srv_role         = "bastion"
   servers          = "${var.bastion_count}"

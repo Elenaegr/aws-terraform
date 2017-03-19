@@ -5,7 +5,7 @@ resource "vsphere_folder" "metricst_folder" {
 }
 
 module "metricst" {
-  source = "./modules/common-vs-2-disks"
+  source = "../../terraform/modules/servers/common-vs-2-disks"
 
   srv_role         = "metricst"
   servers          = "${var.metricst_count}"

@@ -5,7 +5,7 @@ resource "vsphere_folder" "elasticin_folder" {
 }
 
 module "elasticin" {
-  source = "./modules/common-vs-1-disk"
+  source = "../../terraform/modules/servers/common-vs-1-disk"
 
   srv_role         = "elasticin"
   servers          = "${var.elasticin_count}"

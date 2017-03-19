@@ -5,7 +5,7 @@ resource "vsphere_folder" "rds_folder" {
 }
 
 module "rds" {
-  source = "./modules/common-vs-1-disk"
+  source = "../../terraform/modules/servers/common-vs-1-disk"
 
   srv_role         = "rds"
   servers          = "${var.rds_count}"

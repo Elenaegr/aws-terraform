@@ -5,7 +5,7 @@ resource "vsphere_folder" "kaf_folder" {
 }
 
 module "kaf" {
-  source = "./modules/common-vs-2-disks"
+  source = "../../terraform/modules/servers/common-vs-2-disks"
 
   srv_role         = "kaf"
   servers          = "${var.kaf_count}"
