@@ -3,21 +3,21 @@ env = "prd.mia"
 
 # Component machine amounts
 
-frs_count = 0 # waiting for image
+frs_count = 0
 
-imc_count = 0 # waiting for image
+imc_count = 0
 
 chat_count = 0 # waiting for image
 
 db_count = 21
+
+lbint_count = 2
 
 kaf_count = 6
 
 zk_count = 5
 
 fs_count = 3
-
-tel_count = 0
 
 lbdb_count = 2
 
@@ -31,7 +31,7 @@ alm_count = 2
 
 metricst_count = 4
 
-metricad_count = 2
+metricad_count = 4
 
 fluentd_count = 0
 
@@ -45,7 +45,7 @@ dev_count = 2
 
 bastion_count = 2
 
-artif_count = 2
+artif_count = 0
 
 mc_count = 4
 
@@ -53,7 +53,7 @@ batch_count = 2
 
 cron_count = 2
 
-artif_count = 1
+artif_count = 0
 
 # VSphere common
 #vsphere_user = "${var.username}" It doesnt work :(

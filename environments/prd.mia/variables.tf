@@ -10,13 +10,13 @@ variable chat_count {}
 
 variable db_count {}
 
+variable lbint_count {}
+
 variable kaf_count {}
 
 variable zk_count {}
 
 variable fs_count {}
-
-variable tel_count {}
 
 variable lbdb_count {}
 
