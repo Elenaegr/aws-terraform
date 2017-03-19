@@ -18,7 +18,7 @@ variable fs_count {}
 
 variable tel_count {}
 
-variable lbd_count {}
+variable lbdb_count {}
 
 variable rds_count {}
 
@@ -44,7 +44,11 @@ variable dev_count {}
 
 variable bastion_count {}
 
-variable artif_count {}
+variable mc_count {}
+
+variable batch_count {}
+
+variable cron_count {}
 
 # VSphere common
 variable vsphere_datacenter {}
