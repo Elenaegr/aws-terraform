@@ -5,7 +5,7 @@ resource "vsphere_folder" "db_folder" {
 }
 
 module "db" {
-  source = "../../terraform/modules/servers/common-vs-2-disks"
+  source = "modules/common-vs-2-disks"
 
   srv_role         = "db"
   servers          = "${var.db_count}"

@@ -9,49 +9,49 @@ imc_count = 0
 
 chat_count = 0 # waiting for image
 
-db_count = 21
+db_count = 3
 
-lbint_count = 2
+lbint_count = 0
 
-kaf_count = 6
+kaf_count = 0
 
-zk_count = 5
+zk_count = 0
 
-fs_count = 3
+fs_count = 0
 
-lbdb_count = 2
+lbdb_count = 0
 
-rds_count = 3
+rds_count = 0
 
-rbt_count = 3
+rbt_count = 0
 
-prm_count = 2
+prm_count = 0
 
-alm_count = 2
+alm_count = 0
 
-metricst_count = 4
+metricst_count = 0
 
-metricad_count = 4
+metricad_count = 0
 
 fluentd_count = 0
 
-elasticin_count = 2
+elasticin_count = 0
 
-elasticcli_count = 2
+elasticcli_count = 0
 
-elasticdata_count = 2
+elasticdata_count = 0
 
-dev_count = 2
+dev_count = 0
 
-bastion_count = 2
+bastion_count = 0
 
 artif_count = 0
 
-mc_count = 4
+mc_count = 0
 
-batch_count = 2
+batch_count = 0
 
-cron_count = 2
+cron_count = 0
 
 artif_count = 0
 
