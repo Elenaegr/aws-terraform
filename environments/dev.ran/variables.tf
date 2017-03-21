@@ -6,6 +6,8 @@ variable frs_count {}
 
 variable imc_count {}
 
+variable lbchat_count {}
+
 variable chat_count {}
 
 variable db_count {}
@@ -45,6 +47,8 @@ variable dev_count {}
 variable bastion_count {}
 
 variable artif_count {}
+
+variable fpx_count {}
 
 # VSphere common
 variable vsphere_datacenter {}

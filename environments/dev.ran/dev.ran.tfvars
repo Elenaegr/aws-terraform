@@ -7,6 +7,8 @@ frs_count = 1
 
 imc_count = 1
 
+lbchat_count = 2
+
 chat_count = 2
 
 db_count = 3
@@ -46,6 +48,8 @@ dev_count = 2
 bastion_count = 2
 
 artif_count = 1
+
+fpx_count = 2
 
 # VSphere common
 #vsphere_user = "${var.username}" It doesnt work :(
