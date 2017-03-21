@@ -6,6 +6,8 @@ variable frs_count {}
 
 variable imc_count {}
 
+variable lbchat_count {}
+
 variable chat_count {}
 
 variable db_count {}

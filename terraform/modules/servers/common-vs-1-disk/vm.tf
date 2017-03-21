@@ -35,4 +35,7 @@ resource "vsphere_virtual_machine" "srv" {
     "guestinfo.domain" = "${lower(format(var.dns_domain))}"
   }
   skip_customization = "${var.skip_config}"
+  lifecycle {
+    ignore_changes = ["disk"]
+  }
 }

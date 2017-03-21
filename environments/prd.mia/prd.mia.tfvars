@@ -7,6 +7,8 @@ frs_count = 6
 
 imc_count = 4
 
+lbchat_count = 2
+
 chat_count = 4
 
 db_count = 21
