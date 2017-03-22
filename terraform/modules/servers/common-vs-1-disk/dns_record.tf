@@ -7,6 +7,10 @@ resource "powerdns_record" "a" {
   type    = "A"
   ttl     = 600
   records = ["${element(vsphere_virtual_machine.srv.*.network_interface.0.ipv4_address, count.index)}"]
+
+  lifecycle {
+    ignore_changes = ["records"]
+  }
 }
 
 resource "powerdns_record" "ptr" {
@@ -24,10 +28,11 @@ resource "powerdns_record" "ptr" {
                   element(split(".", element(vsphere_virtual_machine.srv.*.network_interface.0.ipv4_address, count.index)), 1),
                   element(split(".", element(vsphere_virtual_machine.srv.*.network_interface.0.ipv4_address, count.index)), 0) )}"
 
-  type = "PTR"
-  ttl  = 600
-
-  #records = ["${lower(format("%s.%s", element(vsphere_virtual_machine.srv.*.name, count.index), var.dns_domain))}"]
-  #records = ["${lower(lookup(element(vsphere_virtual_machine.srv.*.custom_configuration_parameters, count.index), "guestinfo.hostname"))}"]
+  type    = "PTR"
+  ttl     = 600
   records = ["${lower(format("%s.%s", element(vsphere_virtual_machine.srv.*.custom_configuration_parameters.guestinfo.hostname, count.index), var.dns_domain))}"]
+
+  lifecycle {
+    ignore_changes = ["name"]
+  }
 }
