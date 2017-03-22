@@ -47,8 +47,6 @@ dev_count = 2
 
 bastion_count = 2
 
-artif_count = 1
-
 fpx_count = 2
 
 # VSphere common

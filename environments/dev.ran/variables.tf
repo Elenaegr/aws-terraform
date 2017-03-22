@@ -46,8 +46,6 @@ variable dev_count {}
 
 variable bastion_count {}
 
-variable artif_count {}
-
 variable fpx_count {}
 
 # VSphere common

@@ -52,8 +52,6 @@ variable batch_count {}
 
 variable cron_count {}
 
-variable artif_count {}
-
 # VSphere common
 variable vsphere_datacenter {}
 

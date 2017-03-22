@@ -47,8 +47,6 @@ dev_count = 2
 
 bastion_count = 2
 
-artif_count = 0
-
 mc_count = 4
 
 batch_count = 2
