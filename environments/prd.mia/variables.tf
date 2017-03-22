@@ -12,15 +12,15 @@ variable chat_count {}
 
 variable db_count {}
 
+variable lbint_count {}
+
 variable kaf_count {}
 
 variable zk_count {}
 
 variable fs_count {}
 
-variable tel_count {}
-
-variable lbd_count {}
+variable lbdb_count {}
 
 variable rds_count {}
 
@@ -46,9 +46,13 @@ variable dev_count {}
 
 variable bastion_count {}
 
-variable artif_count {}
+variable mc_count {}
 
-variable fpx_count {}
+variable batch_count {}
+
+variable cron_count {}
+
+variable artif_count {}
 
 # VSphere common
 variable vsphere_datacenter {}

@@ -7,6 +7,10 @@ frs_count = 1
 
 imc_count = 1
 
+lbchat_count = 2
+
+chat_count = 2
+
 db_count = 3
 
 kaf_count = 3
@@ -15,7 +19,7 @@ zk_count = 3
 
 fs_count = 2
 
-tel_count = 4
+tel_count = 0
 
 lbd_count = 2
 
@@ -23,11 +27,34 @@ rds_count = 3
 
 rbt_count = 2
 
-# VSphere common
-#vsphere_user = "${format("%s", var.username)}"
-vsphere_user = "jajah\\sergey"
+prm_count = 2
 
-vsphere_password = "${var.password}"
+alm_count = 2
+
+metricst_count = 4
+
+metricad_count = 4
+
+fluentd_count = 2
+
+elasticin_count = 2
+
+elasticcli_count = 2
+
+elasticdata_count = 2
+
+dev_count = 2
+
+bastion_count = 2
+
+artif_count = 1
+
+fpx_count = 2
+
+# VSphere common
+#vsphere_user = "${var.username}" It doesnt work :(
+
+#vsphere_password = "${var.password}" It doesnt work :(
 
 vsphere_server = "jjvcntr1.jajah.dublin"
 
@@ -42,6 +69,8 @@ vsphere_cluster = "R&D"
 
 vsphere_network_folder = "RAN"
 
+vsphere_mgmt_network = "VLAN_810_RNDV-MGMT_(10.230.128.0_24)"
+
 vsphere_dmz_network = "VLAN_821_RNDV-DMZ_(10.230.130.0_23)"
 
 vsphere_app_network = "VLAN_831_RNDV-APP_(10.230.132.0_23)"
@@ -54,7 +83,7 @@ vsphere_cp_template = "Debian8_NovFrs_Template"
 
 vsphere_kub_template = ""
 
-vsphere_gbe_template = ""
+vsphere_chat_template = "Debian7_NovChat_Template"
 
 vsphere_datastore = "3P82-PROD/3P82-01"
 
@@ -65,3 +94,6 @@ pdns_api_key = "api1234"
 pdns_host = "http://ran-pdns01.jajah.dublin:8081"
 
 env_domain = "dev.ran.novumproject.com."
+
+# Temporary
+username = "iaac-dev-deploy"

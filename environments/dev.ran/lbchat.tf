@@ -1,14 +1,14 @@
-resource "vsphere_folder" "kaf_folder" {
+resource "vsphere_folder" "lbchat_folder" {
   datacenter = "${var.vsphere_datacenter}"
 
-  path = "${format("%s/KAF", vsphere_folder.env_folder.path)}"
+  path = "${format("%s/LBCHAT", vsphere_folder.env_folder.path)}"
 }
 
-module "kaf" {
-  source = "../../terraform/modules/servers/common-vs-2-disks"
+module "lbchat" {
+  source = "../../terraform/modules/servers/common-vs-1-disk-2-nics"
 
-  srv_role         = "kaf"
-  servers          = "${var.kaf_count}"
+  srv_role         = "lbchat"
+  servers          = "${var.lbchat_count}"
   srv_first_number = 1
   env              = "${var.env}"
   datacenter       = "${var.vsphere_datacenter}"
@@ -16,12 +16,12 @@ module "kaf" {
   dns_domain       = "${var.env_domain}"
 
   #srv_number    = "01"
-  env_folder = "${vsphere_folder.kaf_folder.path}"
+  env_folder = "${vsphere_folder.lbchat_folder.path}"
 
-  srv_vcpu   = 4
-  srv_memory = 16384
+  srv_vcpu   = 2
+  srv_memory = 2048
 
-  second_disk_size = 100
+  #second_disk_size = 100
 
   network     = "${var.vsphere_app_network}"
   datastore   = "${var.vsphere_datastore}"

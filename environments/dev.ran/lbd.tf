@@ -5,7 +5,7 @@ resource "vsphere_folder" "lbd_folder" {
 }
 
 module "lbd" {
-  source = "./modules/common-server-1-disk"
+  source = "../../terraform/modules/servers/common-vs-1-disk"
 
   srv_role         = "lbd"
   servers          = "${var.lbd_count}"

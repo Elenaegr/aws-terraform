@@ -5,7 +5,7 @@ resource "vsphere_folder" "tel_folder" {
 }
 
 module "tel" {
-  source = "./modules/common-server-1-disk"
+  source = "../../terraform/modules/servers/common-vs-1-disk"
 
   srv_role         = "tel"
   servers          = "${var.tel_count}"

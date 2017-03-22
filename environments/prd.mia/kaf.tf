@@ -18,10 +18,10 @@ module "kaf" {
   #srv_number    = "01"
   env_folder = "${vsphere_folder.kaf_folder.path}"
 
-  srv_vcpu   = 4
-  srv_memory = 16384
+  srv_vcpu   = 8
+  srv_memory = 32768
 
-  second_disk_size = 100
+  second_disk_size = 650
 
   network     = "${var.vsphere_app_network}"
   datastore   = "${var.vsphere_datastore}"
