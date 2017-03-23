@@ -101,6 +101,8 @@ variable pdns_host {}
 
 variable env_domain {}
 
+variable root_domain {}
+
 # Temporary
 variable username {}
 
