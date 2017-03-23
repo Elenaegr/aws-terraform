@@ -97,5 +97,7 @@ pdns_host = "http://mia-pdns01.jajah.dublin:8081"
 
 env_domain = "prd.mia.novumproject.com."
 
+root_domain = "novumproject.com."
+
 # Temporary
 username = "iaac-prd-deploy"

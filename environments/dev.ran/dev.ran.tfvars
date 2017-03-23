@@ -93,5 +93,7 @@ pdns_host = "http://ran-pdns01.jajah.dublin:8081"
 
 env_domain = "dev.ran.novumproject.com."
 
+root_domain = "novumproject.com."
+
 # Temporary
 username = "iaac-dev-deploy"
