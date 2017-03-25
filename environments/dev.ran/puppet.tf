@@ -11,5 +11,5 @@ resource "powerdns_record" "puppet-ca" {
   name    = "${format("_x-puppet-ca._tcp.%s", var.root_domain)}"
   type    = "SRV"
   ttl     = 600
-  records = ["0 5 9141 puppet.tuenti.io."]
+  records = ["0 5 9141 ca.puppet.tuenti.io."]
 }
