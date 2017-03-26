@@ -49,6 +49,8 @@ bastion_count = 2
 
 fpx_count = 2
 
+metricsfe_count = 3
+
 # VSphere common
 #vsphere_user = "${var.username}" It doesnt work :(
 

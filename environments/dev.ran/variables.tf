@@ -48,6 +48,8 @@ variable bastion_count {}
 
 variable fpx_count {}
 
+variable metricsfe_count {}
+
 # VSphere common
 variable vsphere_datacenter {}
 
