@@ -21,7 +21,7 @@ fs_count = 2
 
 tel_count = 0
 
-lbd_count = 2
+lbdb_count = 2
 
 rds_count = 3
 

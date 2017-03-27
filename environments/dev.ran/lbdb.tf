@@ -1,14 +1,14 @@
-resource "vsphere_folder" "lbd_folder" {
+resource "vsphere_folder" "lbdb_folder" {
   datacenter = "${var.vsphere_datacenter}"
 
-  path = "${format("%s/LBD", vsphere_folder.env_folder.path)}"
+  path = "${format("%s/LBDB", vsphere_folder.env_folder.path)}"
 }
 
-module "lbd" {
+module "lbdb" {
   source = "../../terraform/modules/servers/common-vs-1-disk"
 
-  srv_role         = "lbd"
-  servers          = "${var.lbd_count}"
+  srv_role         = "lbdb"
+  servers          = "${var.lbdb_count}"
   srv_first_number = 1
   env              = "${var.env}"
   datacenter       = "${var.vsphere_datacenter}"
@@ -16,7 +16,7 @@ module "lbd" {
   dns_domain       = "${var.env_domain}"
 
   #srv_number    = "01"
-  env_folder = "${vsphere_folder.lbd_folder.path}"
+  env_folder = "${vsphere_folder.lbdb_folder.path}"
 
   srv_vcpu   = 4
   srv_memory = 8192

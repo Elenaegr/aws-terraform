@@ -20,7 +20,7 @@ variable fs_count {}
 
 variable tel_count {}
 
-variable lbd_count {}
+variable lbdb_count {}
 
 variable rds_count {}
 
