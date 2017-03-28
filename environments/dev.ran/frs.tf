@@ -25,6 +25,6 @@ module "frs" {
 
   network     = "${var.vsphere_app_network}"
   datastore   = "${var.vsphere_datastore}"
-  template    = "${format("%s/%s", var.vsphere_templates_folder, var.vsphere_cp_template)}"
+  template    = "${format("%s/%s", var.vsphere_templates_folder, var.vsphere_common_template)}"
   skip_config = "true"
 }

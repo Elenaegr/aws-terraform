@@ -80,10 +80,6 @@ variable vsphere_common_template {
   description = "Common used template"
 }
 
-variable vsphere_cp_template {
-  description = "Calling platform template"
-}
-
 variable vsphere_kub_template {
   description = "Kubernetes template"
 }
