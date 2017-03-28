@@ -27,23 +27,20 @@ resource "vsphere_virtual_machine" "srv" {
     template = "${var.template}"
   }
 
-  # The second disk disabled due to bug - https://github.com/hashicorp/terraform/issues/12606
-  # It will be added manually until the bug is fixed.
-  # 
-  #  disk {
-  #    datastore = "${var.datastore}"
-  #    size      = "${var.second_disk_size}"
-  #
-  #    name = "${format("%s_2", upper(format("%s%s-%s.%s",
-  #                                        "${var.srv_branch == "none" ? "" : "${var.srv_branch}-"}",
-  #                                        var.srv_role, 
-  #                                        "${var.srv_number == "none" ? format("%02d", count.index + var.srv_first_number) : var.srv_number}",
-  #                                        var.env)))}"
-  #
-  #    type            = "${var.second_disk_type}"
-  #    controller_type = "${var.second_disk_clrtype}"
-  #    bootable        = "false"
-  #  }
+  disk {
+    datastore = "${var.datastore}"
+    size      = "${var.second_disk_size}"
+
+    name = "${format("%s_1", upper(format("%s%s-%s.%s",
+                                          "${var.srv_branch == "none" ? "" : "${var.srv_branch}-"}",
+                                          var.srv_role, 
+                                          "${var.srv_number == "none" ? format("%02d", count.index + var.srv_first_number) : var.srv_number}",
+                                          var.env)))}"
+
+    type            = "${var.second_disk_type}"
+    controller_type = "${var.second_disk_clrtype}"
+    bootable        = "false"
+  }
 
   custom_configuration_parameters {
     "guestinfo.hostname" = "${lower(format("%s%s-%s",
@@ -53,7 +50,9 @@ resource "vsphere_virtual_machine" "srv" {
 
     "guestinfo.domain" = "${lower(format(var.dns_domain))}"
   }
+
   skip_customization = "${var.skip_config}"
+
   lifecycle {
     ignore_changes = ["disk"]
   }
