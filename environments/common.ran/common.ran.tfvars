@@ -1,75 +1,9 @@
 # Common
-env = "dev.ran"
+env = "common.ran"
 
 # Component machine amounts
 
-frs_count = 1
-
-imc_count = 1
-
-lbchat_count = 2
-
-chat_count = 2
-
-db_count = 3
-
-kaf_count = 3
-
-zk_count = 3
-
-fs_count = 2
-
-tel_count = 0
-
-lbdb_count = 2
-
-rds_count = 3
-
-rbt_count = 3
-
-prm_count = 2
-
-alm_count = 2
-
-metricst_count = 4
-
-metricad_count = 4
-
-fluentd_count = 2
-
-elasticin_count = 2
-
-elasticcli_count = 2
-
-elasticdata_count = 2
-
-dev_count = 2
-
-bastion_count = 2
-
-fpx_count = 2
-
-metricsfe_count = 2
-
-mc_count = 2
-
-beanstalk_count = 2
-
-lbvoice_count = 2
-
-voicegw_count = 2
-
-lbsip_count = 2
-
-trans_count = 2
-
-sr_count = 2
-
 # VSphere common
-#vsphere_user = "${var.username}" It doesnt work :(
-
-#vsphere_password = "${var.password}" It doesnt work :(
-
 vsphere_server = "jjvcntr1.jajah.dublin"
 
 vsphere_root_folder = "DEV/Novum"
@@ -105,7 +39,7 @@ pdns_api_key = "api1234"
 
 pdns_host = "http://ran-pdns01.jajah.dublin:8081"
 
-env_domain = "dev.ran.novumproject.com"
+env_domain = "ran.novumproject.com"
 
 root_domain = "novumproject.com"
 

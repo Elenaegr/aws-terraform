@@ -45,7 +45,7 @@ elasticdata_count = 2
 
 dev_count = 0
 
-bastion_count = 2
+bastion_count = 0
 
 fpx_count = 2
 
@@ -58,6 +58,8 @@ hadoopcm_count = 1
 hadoopnn_count = 2
 
 hadoopdn_count = 2
+
+kubm_count = 1
 
 # VSphere common
 #vsphere_user = "${var.username}" It doesnt work :(

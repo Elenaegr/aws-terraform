@@ -2,63 +2,6 @@
 variable env {}
 
 # Components
-variable frs_count {}
-
-variable imc_count {}
-
-variable lbchat_count {}
-
-variable chat_count {}
-
-variable db_count {}
-
-variable kaf_count {}
-
-variable zk_count {}
-
-variable fs_count {}
-
-variable tel_count {}
-
-variable lbdb_count {}
-
-variable rds_count {}
-
-variable rbt_count {}
-
-variable prm_count {}
-
-variable alm_count {}
-
-variable metricst_count {}
-
-variable metricad_count {}
-
-variable fluentd_count {}
-
-variable elasticin_count {}
-
-variable elasticcli_count {}
-
-variable elasticdata_count {}
-
-variable dev_count {}
-
-variable bastion_count {}
-
-variable fpx_count {}
-
-variable metricsfe_count {}
-
-variable vertica_count {}
-
-variable hadoopcm_count {}
-
-variable hadoopnn_count {}
-
-variable hadoopdn_count {}
-
-variable kubm_count {}
 
 # VSphere common
 variable vsphere_datacenter {}
