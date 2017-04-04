@@ -53,6 +53,18 @@ batch_count = 2
 
 cron_count = 2
 
+beanstalk_count = 2
+
+lbvoice_count = 2
+
+voicegw_count = 6
+
+lbsip_count = 2
+
+trans_count = 7
+
+sr_count = 2
+
 # VSphere common
 #vsphere_user = "${var.username}" It doesnt work :(
 

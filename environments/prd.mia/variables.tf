@@ -52,6 +52,17 @@ variable batch_count {}
 
 variable cron_count {}
 
+variable beanstalk_count {}
+
+variable lbvoice_count {}
+
+variable voicegw_count {}
+
+variable lbsip_count {}
+
+variable trans_count {}
+
+variable sr_count {}
 # VSphere common
 variable vsphere_datacenter {}
 
