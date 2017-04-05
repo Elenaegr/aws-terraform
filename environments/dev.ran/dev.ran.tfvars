@@ -43,6 +43,8 @@ elasticcli_count = 2
 
 elasticdata_count = 2
 
+elasticbuffer_count = 2
+
 dev_count = 2
 
 bastion_count = 2

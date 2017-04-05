@@ -42,6 +42,8 @@ variable elasticcli_count {}
 
 variable elasticdata_count {}
 
+variable elasticbuffer_count {}
+
 variable dev_count {}
 
 variable bastion_count {}
@@ -63,6 +65,7 @@ variable lbsip_count {}
 variable trans_count {}
 
 variable sr_count {}
+
 # VSphere common
 variable vsphere_datacenter {}
 

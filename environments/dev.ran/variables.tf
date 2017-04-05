@@ -42,6 +42,8 @@ variable elasticcli_count {}
 
 variable elasticdata_count {}
 
+variable elasticbuffer_count {}
+
 variable dev_count {}
 
 variable bastion_count {}
