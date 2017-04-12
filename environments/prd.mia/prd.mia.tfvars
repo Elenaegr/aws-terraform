@@ -35,6 +35,8 @@ metricst_count = 4
 
 metricad_count = 4
 
+metricsfe_count = 3
+
 fluentd_count = 0
 
 elasticin_count = 2
@@ -63,7 +65,7 @@ voicegw_count = 6
 
 lbsip_count = 2
 
-trans_count = 7
+trans_count = 8
 
 sr_count = 2
 

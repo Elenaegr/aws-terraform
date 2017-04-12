@@ -34,6 +34,8 @@ variable metricst_count {}
 
 variable metricad_count {}
 
+variable metricsfe_count {}
+
 variable fluentd_count {}
 
 variable elasticin_count {}
