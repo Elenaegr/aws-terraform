@@ -2,9 +2,7 @@
 variable env {}
 
 # Components
-variable frs_count {}
-
-variable imc_count {}
+variable scapi_count {}
 
 variable lbchat_count {}
 

@@ -3,9 +3,7 @@ env = "prd.mia"
 
 # Component machine amounts
 
-frs_count = 6
-
-imc_count = 4
+scapi_count = 8
 
 lbchat_count = 2
 

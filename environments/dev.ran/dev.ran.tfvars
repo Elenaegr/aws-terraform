@@ -3,9 +3,7 @@ env = "dev.ran"
 
 # Component machine amounts
 
-frs_count = 2
-
-imc_count = 1
+scapi_count = 3
 
 lbchat_count = 2
 

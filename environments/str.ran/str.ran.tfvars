@@ -3,9 +3,7 @@ env = "str.ran"
 
 # Component machine amounts
 
-frs_count = 5
-
-imc_count = 4
+frs_count = 6
 
 lbchat_count = 2
 
