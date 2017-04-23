@@ -66,6 +66,8 @@ variable trans_count {}
 
 variable sr_count {}
 
+variable sensu_count {}
+
 # VSphere common
 variable vsphere_datacenter {}
 

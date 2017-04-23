@@ -67,6 +67,8 @@ trans_count = 8
 
 sr_count = 2
 
+sensu_count = 2
+
 # VSphere common
 #vsphere_user = "${var.username}" It doesnt work :(
 
