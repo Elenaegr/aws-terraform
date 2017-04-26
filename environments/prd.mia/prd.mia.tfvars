@@ -69,6 +69,8 @@ sr_count = 2
 
 sensu_count = 2
 
+sentinel_count = 3
+
 # VSphere common
 #vsphere_user = "${var.username}" It doesnt work :(
 
