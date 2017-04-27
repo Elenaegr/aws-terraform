@@ -20,5 +20,5 @@ resource "powerdns_record" "k8s_ingress_wildcard" {
   name    = "${format("*.ing.k8s.%s.", var.env_domain)}"
   type    = "CNAME"
   ttl     = 600
-  records = ["${format("kubworker.%s", var.env_domain)}"]
+  records = ["${format("kubworker.%s.", var.env_domain)}"]
 }
