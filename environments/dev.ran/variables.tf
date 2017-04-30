@@ -68,6 +68,8 @@ variable sensu_count {}
 
 variable sentinel_count {}
 
+variable proxy_count {}
+
 # VSphere common
 variable vsphere_datacenter {}
 
