@@ -70,6 +70,8 @@ variable sentinel_count {}
 
 variable proxy_count {}
 
+variable lbint_count {}
+
 # VSphere common
 variable vsphere_datacenter {}
 
