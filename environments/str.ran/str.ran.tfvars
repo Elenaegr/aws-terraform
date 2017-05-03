@@ -57,7 +57,7 @@ hadoopnn_count = 2
 
 hadoopdn_count = 2
 
-kubm_count = 1
+kubm_count = 0
 
 # VSphere common
 #vsphere_user = "${var.username}" It doesnt work :(

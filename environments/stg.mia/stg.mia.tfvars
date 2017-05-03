@@ -112,4 +112,4 @@ env_domain = "stg.mia.novumproject.com"
 root_domain = "novumproject.com"
 
 # Temporary
-username = "iaac-stg-deploy"
+username = "iaac-prd-deploy"

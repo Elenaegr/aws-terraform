@@ -20,7 +20,6 @@ module "beanstalk" {
 
   srv_vcpu   = 2
   srv_memory = 4096
-  
 
   #second_disk_size = 100
 

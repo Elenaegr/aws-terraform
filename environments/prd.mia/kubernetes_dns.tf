@@ -8,11 +8,11 @@ resource "powerdns_record" "k8s_svc" {
 
 resource "powerdns_record" "k8s_svc_wildcard" {
   depends_on = ["powerdns_record.k8s_svc"]
-  zone    = "${lower(format("%s.", var.env_domain))}"
-  name    = "${format("*.svc.k8s.%s.", var.env_domain)}"
-  type    = "CNAME"
-  ttl     = 600
-  records = ["${powerdns_record.k8s_svc.name}"]
+  zone       = "${lower(format("%s.", var.env_domain))}"
+  name       = "${format("*.svc.k8s.%s.", var.env_domain)}"
+  type       = "CNAME"
+  ttl        = 600
+  records    = ["${powerdns_record.k8s_svc.name}"]
 }
 
 resource "powerdns_record" "k8s_ingress_wildcard" {
