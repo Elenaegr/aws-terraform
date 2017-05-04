@@ -1,5 +1,6 @@
 .terraform/
 !.terraform/modules/
+terraform.tfstate.backup
 
 # test configuration
 environments/dev.ran.test/
