@@ -1,6 +1,10 @@
+# Common
 .terraform/
 !.terraform/modules/
 terraform.tfstate.backup
+
+# Debug info
+crash.log 
 
 # test configuration
 environments/dev.ran.test/

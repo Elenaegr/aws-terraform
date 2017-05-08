@@ -1,26 +1,26 @@
-resource "vsphere_folder" "kubm_folder" {
+resource "vsphere_folder" "kubl_folder" {
   datacenter = "${var.vsphere_datacenter}"
 
-  path = "${format("%s/KUBM", vsphere_folder.env_folder.path)}"
+  path = "${format("%s/KUBL", vsphere_folder.env_folder.path)}"
 }
 
-module "kubm" {
+module "kubl" {
   source = "../../terraform/modules/servers/coreos-vs-1-disk"
 
-  srv_role         = "kubm"
-  servers          = "${var.kubm_count}"
+  srv_role         = "kubl"
+  servers          = "${var.kubl_count}"
   srv_first_number = 1
   env              = "${var.env}"
   datacenter       = "${var.vsphere_datacenter}"
   cluster          = "${var.vsphere_cluster}"
   dns_domain       = "${var.env_domain}"
 
-  cloud_init_url = "${format("http://bootcfg.tuenti.io/cloud?role=kubemaster&cluster=kubernetes-novum.%s", var.env)}"
+  cloud_init_url = "${format("http://bootcfg.tuenti.io/cloud?role=kubelb&cluster=kubernetes-novum.%s", var.env)}"
 
   #srv_number    = "01"
-  env_folder = "${vsphere_folder.kubm_folder.path}"
+  env_folder = "${vsphere_folder.kubl_folder.path}"
 
-  srv_vcpu   = 4
+  srv_vcpu   = 16
   srv_memory = 8192
 
   #second_disk_size = 100

@@ -58,6 +58,10 @@ variable hadoopdn_count {}
 
 variable kubm_count {}
 
+variable kubl_count {}
+
+variable kubw_count {}
+
 # VSphere common
 variable vsphere_datacenter {}
 

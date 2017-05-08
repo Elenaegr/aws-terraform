@@ -57,7 +57,11 @@ hadoopnn_count = 2
 
 hadoopdn_count = 2
 
-kubm_count = 0
+kubm_count = 3
+
+kubw_count = 3
+
+kubl_count = 2
 
 # VSphere common
 #vsphere_user = "${var.username}" It doesnt work :(
@@ -87,7 +91,7 @@ vsphere_db_network = "VLAN_741_RNSR-DB_(10.230.166.0_24)"
 
 vsphere_common_template = "Debian8_Nov_Template"
 
-vsphere_kub_template = "CoreOS_Template"
+vsphere_kub_template = "CoreOS_Current"
 
 vsphere_chat_template = "Debian7_NovChat_Template"
 
