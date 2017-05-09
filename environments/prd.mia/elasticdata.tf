@@ -19,9 +19,9 @@ module "elasticdata" {
   env_folder = "${vsphere_folder.elasticdata_folder.path}"
 
   srv_vcpu   = 4
-  srv_memory = 8192
+  srv_memory = 16384
 
-  second_disk_size = 100
+  second_disk_size = 500
 
   network     = "${var.vsphere_mgmt_network}"
   datastore   = "${var.vsphere_datastore}"
