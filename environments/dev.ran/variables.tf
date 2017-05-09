@@ -24,9 +24,11 @@ variable rds_count {}
 
 variable rbt_count {}
 
-variable prm_count {}
+variable prometheus_count {}
 
-variable alm_count {}
+variable alertmgr_count {}
+
+variable grafana_count {}
 
 variable metricst_count {}
 
