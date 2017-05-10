@@ -109,7 +109,7 @@ vsphere_db_network = "VLAN_441_LIVE-DB_(10.230.4.0_24)"
 
 vsphere_common_template = "Debian8_Nov_Template"
 
-vsphere_kub_template = ""
+vsphere_kub_template = "CoreOS_Current"
 
 vsphere_chat_template = "Debian7_NovChat_Template"
 
