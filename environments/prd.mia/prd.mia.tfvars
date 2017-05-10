@@ -47,6 +47,12 @@ elasticdata_count = 2
 
 elasticbuffer_count = 2
 
+kubm_count = 3
+
+kubw_count = 3
+
+kubl_count = 2
+
 dev_count = 2
 
 bastion_count = 2
