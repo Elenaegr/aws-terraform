@@ -25,10 +25,6 @@ rds_count = 3
 
 rbt_count = 2
 
-prm_count = 2
-
-alm_count = 2
-
 metricst_count = 2
 
 metricad_count = 2

@@ -24,10 +24,6 @@ variable rds_count {}
 
 variable rbt_count {}
 
-variable prm_count {}
-
-variable alm_count {}
-
 variable metricst_count {}
 
 variable metricad_count {}
