@@ -25,9 +25,11 @@ rds_count = 3
 
 rbt_count = 3
 
-prm_count = 2
+prometheus_count = 2
 
-alm_count = 2
+alertmgr_count = 2
+
+grafana_count = 2
 
 metricst_count = 4
 

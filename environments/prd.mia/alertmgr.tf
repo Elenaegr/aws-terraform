@@ -1,14 +1,14 @@
-resource "vsphere_folder" "alm_folder" {
+resource "vsphere_folder" "alertmgr_folder" {
   datacenter = "${var.vsphere_datacenter}"
 
-  path = "${format("%s/ALM", vsphere_folder.env_folder.path)}"
+  path = "${format("%s/ALERTMGR", vsphere_folder.env_folder.path)}"
 }
 
-module "alm" {
+module "alertmgr" {
   source = "../../terraform/modules/servers/common-vs-1-disk"
 
-  srv_role         = "alm"
-  servers          = "${var.alm_count}"
+  srv_role         = "alertmgr"
+  servers          = "${var.alertmgr_count}"
   srv_first_number = 1
   env              = "${var.env}"
   datacenter       = "${var.vsphere_datacenter}"
@@ -16,7 +16,7 @@ module "alm" {
   dns_domain       = "${var.env_domain}"
 
   #srv_number    = "01"
-  env_folder = "${vsphere_folder.alm_folder.path}"
+  env_folder = "${vsphere_folder.alertmgr_folder.path}"
 
   srv_vcpu   = 1
   srv_memory = 2048

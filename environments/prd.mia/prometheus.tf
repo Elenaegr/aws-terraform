@@ -1,14 +1,14 @@
-resource "vsphere_folder" "prm_folder" {
+resource "vsphere_folder" "prometheus_folder" {
   datacenter = "${var.vsphere_datacenter}"
 
-  path = "${format("%s/PRM", vsphere_folder.env_folder.path)}"
+  path = "${format("%s/PROMETHEUS", vsphere_folder.env_folder.path)}"
 }
 
-module "prm" {
+module "prometheus" {
   source = "../../terraform/modules/servers/common-vs-2-disks"
 
-  srv_role         = "prm"
-  servers          = "${var.prm_count}"
+  srv_role         = "prometheus"
+  servers          = "${var.prometheus_count}"
   srv_first_number = 1
   env              = "${var.env}"
   datacenter       = "${var.vsphere_datacenter}"
@@ -16,7 +16,7 @@ module "prm" {
   dns_domain       = "${var.env_domain}"
 
   #srv_number    = "01"
-  env_folder = "${vsphere_folder.prm_folder.path}"
+  env_folder = "${vsphere_folder.prometheus_folder.path}"
 
   srv_vcpu   = 4
   srv_memory = 16384
